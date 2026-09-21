@@ -8,8 +8,8 @@
 Pada P2 saya membangun halaman profil menggunakan struktur HTML5 yang valid, elemen semantik, teks, daftar, tautan, dan gambar.
 ## Validasi HTML
 - Berkas yang divalidasi: `index.html`
-- Galat yang ditemukan: [tuliskan jika ada]
-- Perbaikan yang dilakukan: [tuliskan]
-- Hasil validasi akhir: [tuliskan hasil]
+- Galat yang ditemukan: tidak ada galat
+- Perbaikan yang dilakukan: tidak ada perbaikan walaupun lambat
+- Hasil validasi akhir: no error
 ## GitHub Pages
 URL: https://farhankusuma12.github.io/2611500003-PWD-TI1A-2627O/pertemuan-02/index.html
