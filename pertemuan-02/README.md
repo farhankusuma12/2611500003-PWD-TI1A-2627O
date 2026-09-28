@@ -20,4 +20,4 @@ Pada P2 saya membangun halaman profil menggunakan struktur HTML5 yang valid, ele
 
 ## GitHub Pages
 
-URL: https://farhankusuma12.github.io/2611500003-PWD-TI1A-2627O/pertemuan-03/
+URL: https://farhankusuma12.github.io/2611500003-PWD-TI1A-2627O/pertemuan-02/
