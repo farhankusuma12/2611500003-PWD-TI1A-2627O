@@ -1,6 +1,6 @@
 # Pemrograman Web Dasar
-Nama: Muhammad Indzar Wafi
-NIM: 2611500008
+Nama: Farhan Kusuma
+NIM: 2611500003
 Kelompok: TI1A
 Tahun Ajaran: 2026/2027 Gasal
 
