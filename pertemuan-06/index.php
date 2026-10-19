@@ -112,6 +112,8 @@ echo "<p>Konten yang dihasilkan oleh PHP.</p>";
         <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p>
         <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
         <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p>
+        <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "Belum ada" : $catatanTambahan;
+?></p>
           <p>Saya Mahasiswa Program Studi Teknik Informatika.</p>
 
           <h3>Target Belajar (perulanngan for)</h3>
