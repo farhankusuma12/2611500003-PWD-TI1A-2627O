@@ -11,6 +11,9 @@ $statusAktif = true;
 $catatanTambahan = null;
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
 const PROFIL_GITHUB = "farhankusuma12";
+// Bagian 2: Operator
+$batasSemester = 8;
+$sisaSemester = $batasSemester - $semester;
 ?>
 
 <!doctype html>
@@ -76,10 +79,13 @@ echo "<p>Konten yang dihasilkan oleh PHP.</p>";
         <img src="img/foto-profil.jpg" alt="Foto profil Nama Mahasiswa" />
       </section>
       <section id="about">
-        <h2>Profil Singkat</h2>
+        <h2>Tentang saya</h2>
         <article>
+        <h3>Profil Singkat</h3>
+        <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p>
           <p>Saya Mahasiswa Program Studi Teknik Informatika.</p>
           <h3>Target Belajar</h3>
+          
           <ol>
             <li>Memahami struktur HTML5.</li>
             <li>Menyusun halaman web semantik.</li>
