@@ -254,7 +254,7 @@ $nomorSemester++; // operator penugasan
         </form>
       </section>
     </main>
-    <footer><p>&copy;2026 Farhan Kusuma 2611500003.</p></footer>
+    <footer><p>&copy; <?= date("Y") ?> <?php echo $namaMahasiswa; ?> [<?= $nim ?>]</p></footer>
     <script src="script.js"></script>
   </body>
 </html>
