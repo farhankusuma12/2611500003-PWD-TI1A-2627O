@@ -8,12 +8,22 @@
   </head>
   <body>
     <?php
+// Pengujian awal eksekusi PHP.
+echo "PHP berhasil dijalankan.";
+?>
+
+    <?php
 // Komentar satu baris.
 echo "Keluaran menggunakan echo.";
 /*
 Komentar beberapa baris.
 Komentar ini tidak ditampilkan pada halaman.
 */
+?>
+
+<p>Konten HTML statis.</p>
+<?php
+echo "<p>Konten yang dihasilkan oleh PHP.</p>";
 ?>
 
     <header>
