@@ -39,7 +39,7 @@ Fitur dan Pengembangan
 
 ## Riwayat Pengembangan
 
-- **Siapkan baseline P5 dari artefak P4** (`54f5308`): menyiapkan struktur awal P5 dari hasil P4.
-- **Hubungkan JavaScript eksternal ke HTML** (`645a4ef`): menautkan `script.js` ke `index.html`.
-- **Tambah tombol navigasi responsif** (`e7f131e`): menambahkan tombol hamburger dan logika
+- **Siapkan baseline P5 dari artefak P4** : menyiapkan struktur awal P5 dari hasil P4.
+- **Hubungkan JavaScript eksternal ke HTML** : menautkan `script.js` ke `index.html`.
+- **Tambah tombol navigasi responsif** : menambahkan tombol hamburger dan logika
   toggle menu berbasis event listener.
