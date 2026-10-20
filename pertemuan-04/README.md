@@ -15,4 +15,4 @@
 ## Repositori
 
 URL GitHub: https://github.com/farhankusuma12/2611500003-PWD-TI1A-2627O
-Isi README.md berdasarkan hasil pengembangan, pengujian, dan validasi yang benar benar
+Isi README.md berdasarkan hasil pengembangan, pengujian, dan validasi yang benar.
