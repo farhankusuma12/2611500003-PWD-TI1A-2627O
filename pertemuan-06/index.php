@@ -47,26 +47,8 @@ $fokusProgramStudi = "Belum ditentukan";
     <title>Profil Mahasiswa</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <?php
-// Pengujian awal eksekusi PHP.
-echo "PHP berhasil dijalankan.";
-?>
-
-    <?php
-// Komentar satu baris.
-echo "Keluaran menggunakan echo.";
-/*
-Komentar beberapa baris.
-Komentar ini tidak ditampilkan pada halaman.
-*/
-?>
-
-<p>Konten HTML statis.</p>
-<?php
-echo "<p>Konten yang dihasilkan oleh PHP.</p>";
-?>
-
     <header>
       <h1>Profil Mahasiswa</h1>
       <button
@@ -78,9 +60,7 @@ echo "<p>Konten yang dihasilkan oleh PHP.</p>";
       aria-expanded="false"
       >          
        &#9776;         
-    </button>       
-    </div> 
-      
+    </button>        
       <nav>
         <ul id="navMenu">
           <li><a href="#home">Beranda</a></li>
@@ -91,14 +71,11 @@ echo "<p>Konten yang dihasilkan oleh PHP.</p>";
     </header>
     <main>
       <section id="home">
+        <h2>Selamat Datang</h2>
         <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah
 <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik;
 ?>.</p>
-        <h2>Selamat Datang</h2>
-        <p>
-          Halo, saya Farhan Kusuma. Saya sedang mempelajari Pemrograman Web
-          Dasar .
-        </p>
+        
         <img src="img/foto-profil.jpg" alt="Foto profil Nama Mahasiswa" />
       </section>
       <section id="about">
