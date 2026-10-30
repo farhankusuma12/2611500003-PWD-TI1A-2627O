@@ -1,8 +1,8 @@
 <?php
 // P7 : menangkap nilai dari input form
-echo $_GET["nama"];
-echo $_GET["email"];
-echo $_GET["semester"];
+echo $_POST["nama"];
+echo $_POST["email"];
+echo $_POST["semester"];
 
 // P6: PHP dasar dan pemrograman sisi peladen
 // Bagian 1: Variabel dan konstanta
