@@ -23,11 +23,13 @@ $statusAktif = true;
 $catatanTambahan = null;
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
 const PROFIL_GITHUB = "farhankusuma12";
+
 // Bagian 2: Operator
 $batasSemester = 8;
 $sisaSemester = $batasSemester - $semester;
 $semesterValid = $semester >= 1 && $semester <= $batasSemester;
 $statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu diperiksa";
+
 // Bagian 3: Percabangan if-elseif-else
 if ($semester < 3) {
 $keteranganSemester = "Semester awal";
@@ -36,8 +38,10 @@ $keteranganSemester = "Semester menengah";
 } else {
 $keteranganSemester = "Semester akhir";
 }
+
 $namaProdi = ($programStudi == "SI") ? "Sistem Informasi" : (($programStudi == "TI") ? "Teknik
 Informatika" : "Lainnya");
+
 // Bagian 4: Percabangan switch-case-default
 switch ($programStudi) {
 case "SI":
@@ -132,6 +136,7 @@ echo "</li>";
 }
 ?>
           </ol>
+          
           <h3>Semester (Perulangan while):</h3>
 <ol>
 <?php
