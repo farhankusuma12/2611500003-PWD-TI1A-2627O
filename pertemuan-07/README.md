@@ -10,3 +10,4 @@ di pertemuan-07 saya mengembangkan , menguji , dan menghasilkan :
 7. mempraktikkan pengiriman formulir GET
 8. menyimpan demonstrasi formulir GET
 9. menerima data formulir menggunakan POST
+10. menyesuaikan pembacaan input dan validasi formulir
