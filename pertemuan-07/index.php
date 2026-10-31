@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 // P7: penggunaan POST
 $nama = trim((string) ($_POST['nama'] ?? ''));
 $email = trim((string) ($_POST['email'] ?? ''));
@@ -131,8 +133,31 @@ default:
 $fokusProgramStudi = "Belum ditentukan";
 }
 
+// P7
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+$_SESSION['pesanKesalahan'] = $pesanKesalahan;
+$_SESSION['nama'] = $nama;
+$_SESSION['email'] = $email;
+$_SESSION['semester'] = $semesterForm;
+$_SESSION['tanggal'] = $tanggal;
+$_SESSION['jenis_pesan'] = $jenisPesan;
+$_SESSION['prodi'] = $prodi;
+$_SESSION['minat'] = $minat;
+$_SESSION['pesan'] = $pesan;
 
+header('Location: index.php');
+exit;
+}
 
+$pesanKesalahan = $_SESSION['pesanKesalahan'] ?? '';
+$nama = $_SESSION['nama'] ?? '';
+$email = $_SESSION['email'] ?? '';
+$semesterForm = $_SESSION['semester'] ?? '' ;
+$tanggal = $_SESSION['tanggal'] ?? date("Y-m-d");
+$jenisPesan = $_SESSION['jenis_pesan'] ?? '';
+$prodi = $_SESSION['prodi'] ?? '';
+$minat = $_SESSION['minat'] ?? '';
+$pesan = $_SESSION['pesan'] ?? '';
 ?>
 <!doctype html>
 <html lang="id">
@@ -186,7 +211,6 @@ $fokusProgramStudi = "Belum ditentukan";
         <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p>
         <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "Belum ada" : $catatanTambahan;
 ?></p>
-          <p>Saya Mahasiswa Program Studi Teknik Informatika.</p>
 
           <h3>Target Belajar (perulanngan for)</h3>
           <ol>

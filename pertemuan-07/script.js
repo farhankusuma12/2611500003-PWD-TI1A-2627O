@@ -3,7 +3,10 @@ const navMenu = document.getElementById("navMenu");
 
 navToggle.addEventListener("click", () => {
     const isOpen = navMenu.classList.toggle("nav-open");
+
     navToggle.setAttribute("aria-expanded", isOpen);
+
+
     if (isOpen) {
         navToggle.setAttribute("aria-label", "Tutup navigasi");
     } else {
@@ -12,12 +15,14 @@ navToggle.addEventListener("click", () => {
 });
 const contactForm = document.getElementById("contactForm");
 const formFeedback = document.getElementById("formFeedback");
+
 const namaInput = document.getElementById("nama");
 const emailInput = document.getElementById("email");
 const semesterInput = document.getElementById("semester");
 const tanggalInput = document.getElementById("tanggal");
 const prodiInput = document.getElementById("prodi");
 const pesanInput = document.getElementById("pesan");
+
 contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -43,6 +48,7 @@ contactForm.addEventListener("submit", (event) => {
     }
     
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (!emailPattern.test(email)) {
         formFeedback.textContent = "Masukkan alamat email yang valid.";
         return;
@@ -86,6 +92,7 @@ contactForm.addEventListener("submit", (event) => {
     contactForm.submit();
 
 });
+
 contactForm.addEventListener("reset", () => {
     formFeedback.textContent = "";
 });

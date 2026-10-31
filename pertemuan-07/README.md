@@ -13,3 +13,4 @@ di pertemuan-07 saya mengembangkan , menguji , dan menghasilkan :
 10. menyesuaikan pembacaan input dan validasi formulir
 11. menampilkan pesan kesalahan validasi PHP
 12. mengamankan keluaran data formulir
+13. menerapkan session dan pola PRG
