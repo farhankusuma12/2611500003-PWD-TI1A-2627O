@@ -9,3 +9,4 @@ di pertemuan-07 saya mengembangkan , menguji , dan menghasilkan :
 6. menggunakan session untuk menyimpan hasil post formulir dan menulis output session pada input value.
 7. mempraktikkan pengiriman formulir GET
 8. menyimpan demonstrasi formulir GET
+9. menerima data formulir menggunakan POST

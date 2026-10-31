@@ -1,11 +1,11 @@
 <?php
-session_start();
-// P7 : menangkap nilai dari input form, disimpan ke dalam session
-if (isset($_POST["nama"]) && isset($_POST["email"]) && isset($_POST["semester"])) {
-$_SESSION["nama"] = $_POST["nama"];
-$_SESSION["email"] = $_POST["email"];
-$_SESSION["semester"] = $_POST["semester"];
+// P7: penggunaan POST
+if (isset($_POST['nama'])) {
+$nama = $_POST['nama'];
+echo "Nama yang diterima: " . htmlspecialchars($nama, ENT_QUOTES, 'UTF-8');
 }
+
+
 // P7 : nilai session disimpan ke dalam variabel lokal
 $nama = $_SESSION["nama"] ?? "";
 $email = $_SESSION["email"] ?? ""; 
