@@ -12,3 +12,4 @@ di pertemuan-07 saya mengembangkan , menguji , dan menghasilkan :
 9. menerima data formulir menggunakan POST
 10. menyesuaikan pembacaan input dan validasi formulir
 11. menampilkan pesan kesalahan validasi PHP
+12. mengamankan keluaran data formulir
