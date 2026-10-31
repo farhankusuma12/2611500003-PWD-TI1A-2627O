@@ -11,3 +11,4 @@ di pertemuan-07 saya mengembangkan , menguji , dan menghasilkan :
 8. menyimpan demonstrasi formulir GET
 9. menerima data formulir menggunakan POST
 10. menyesuaikan pembacaan input dan validasi formulir
+11. menampilkan pesan kesalahan validasi PHP
