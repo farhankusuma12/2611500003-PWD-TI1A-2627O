@@ -248,6 +248,24 @@ switch ($programStudi) {
 		<section id="rencana-kegiatan">
     <h2>Rencana Kegiatan Mahasiswa</h2>
 
+		 <p>Silakan isi formulir untuk mengajukan rencana kegiatan mahasiswa.</p>
+
+    <form id="rencanaForm" action="index.php" method="post" data-validation="rencana" novalidate>
+        <input type="hidden" name="jenis_form" value="rencana" />
+
+        <div class="form-group">
+            <label for="nama_kegiatan">Nama Kegiatan</label><br />
+            <input
+                class="input-form"
+                type="text"
+                id="nama_kegiatan"
+                name="nama_kegiatan"
+                placeholder="Masukkan nama kegiatan"
+                minlength="3"
+                maxlength="100"
+                required />
+        </div>
+
 
 
 
