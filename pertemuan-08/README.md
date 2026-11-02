@@ -7,4 +7,5 @@ pada p8, saya melakukan:
 5. menambahkan input rencana kegiatan
 6. menambahkan input tanggal pelaksaannya
 7. menambahkan input lokasi kegiatannya
-8. menambahkan input deskripsi kegiatannya
+8. menambahkan deskripsi kegiatannya
+9. menambahkan tomol kirim dan batal

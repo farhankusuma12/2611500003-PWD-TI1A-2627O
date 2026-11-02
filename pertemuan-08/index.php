@@ -313,9 +313,12 @@ switch ($programStudi) {
                 required></textarea>
         </div>
 
+				 <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
 
-
-
+        <p class="form-feedback" data-form-feedback aria-live="polite"></p>
+    </form>
+</section>
 
 
 		<section id="contact">
