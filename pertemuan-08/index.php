@@ -301,6 +301,18 @@ switch ($programStudi) {
                 required />
         </div>
 
+				 <div class="form-group">
+            <label for="deskripsi_kegiatan">Deskripsi Kegiatan</label><br />
+            <textarea
+                class="input-form"
+                id="deskripsi_kegiatan"
+                name="deskripsi_kegiatan"
+                minlength="10"
+                maxlength="500"
+                placeholder="Jelaskan rencana kegiatan"
+                required></textarea>
+        </div>
+
 
 
 
