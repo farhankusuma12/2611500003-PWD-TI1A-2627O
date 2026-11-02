@@ -6,3 +6,4 @@ pada p8, saya melakukan:
 4. menambahkan input Nama Kegiatan setelah section dan kerangkanya tadi
 5. menambahkan input rencana kegiatan
 6. menambahkan input tanggal pelaksaannya
+7. menambahkan input lokasi kegiatannya

@@ -288,6 +288,20 @@ switch ($programStudi) {
                 required />
         </div>
 
+				<div class="form-group">
+            <label for="lokasi_kegiatan">Lokasi Kegiatan</label><br />
+            <input
+                class="input-form"
+                type="text"
+                id="lokasi_kegiatan"
+                name="lokasi_kegiatan"
+                placeholder="Masukkan lokasi kegiatan"
+                minlength="3"
+                maxlength="100"
+                required />
+        </div>
+
+
 
 
 
