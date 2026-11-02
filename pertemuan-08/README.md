@@ -9,3 +9,4 @@ pada p8, saya melakukan:
 7. menambahkan input lokasi kegiatannya
 8. menambahkan deskripsi kegiatannya
 9. menambahkan tomol kirim dan batal
+10. Menambahkan pengenalan formulir rencana kegiatan

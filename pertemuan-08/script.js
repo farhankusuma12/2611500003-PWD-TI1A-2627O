@@ -126,3 +126,10 @@ contactForms.forEach((contactForm) => {
     }
   });
 });
+
+// Validasi formulir Rencana Kegiatan
+const rencanaForm = document.getElementById("rencanaForm");
+
+if (rencanaForm) {
+    console.log("Formulir Rencana Kegiatan berhasil ditemukan.");
+}
