@@ -1,35 +1,105 @@
 <?php
+
 session_start();
 
-// P7: Memproses data formulir dan menyimpannya ke dalam session.
+// Memproses data formulir menggunakan metode POST.
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-	$nama = trim((string) ($_POST["nama"] ?? ""));
-	$email = trim((string) ($_POST["email"] ?? ""));
-	$semesterForm = trim((string) ($_POST["semester"] ?? ""));
-	$tanggal = trim((string) ($_POST["tanggal"] ?? ""));
-	$jenisPesan = trim((string) ($_POST["jenis_pesan"] ?? ""));
-	$minat = $_POST["minat"] ?? [];
-	$prodi = trim((string) ($_POST["prodi"] ?? ""));
-	$pesan = trim((string) ($_POST["pesan"] ?? ""));
 
-	// Checkbox dapat mengirimkan lebih dari satu nilai.
-	if (!is_array($minat)) {
-		$minat = [];
-	}
+    // Mengambil jenis formulir yang dikirim.
+    $jenisForm = $_POST["jenis_form"] ?? "";
 
-	// Menyimpan setiap nilai formulir ke dalam session secara terpisah.
-	$_SESSION["nama"] = $nama;
-	$_SESSION["email"] = $email;
-	$_SESSION["semester"] = $semesterForm;
-	$_SESSION["tanggal"] = $tanggal;
-	$_SESSION["jenis_pesan"] = $jenisPesan;
-	$_SESSION["minat"] = $minat;
-	$_SESSION["prodi"] = $prodi;
-	$_SESSION["pesan"] = $pesan;
+    // Memproses formulir Rencana Kegiatan.
+    if ($jenisForm === "rencana") {
 
-	// PRG: mencegah pengiriman POST berulang ketika halaman dimuat ulang.
-	header("Location: index.php#contact");
-	exit;
+        // Mengambil dan menormalisasi data masukan.
+        $namaKegiatan = trim((string) ($_POST["nama_kegiatan"] ?? ""));
+        $kategori = trim((string) ($_POST["kategori_kegiatan"] ?? ""));
+        $tanggalPelaksanaan = trim((string) ($_POST["tanggal_pelaksanaan"] ?? ""));
+        $lokasi = trim((string) ($_POST["lokasi_kegiatan"] ?? ""));
+        $deskripsi = trim((string) ($_POST["deskripsi_kegiatan"] ?? ""));
+
+        // Menyiapkan validasi sisi peladen.
+        $errors = [];
+
+        $kategoriDiizinkan = [
+            "Akademik",
+            "Organisasi",
+            "Lomba",
+            "Seminar",
+            "Pengabdian"
+        ];
+
+        if (strlen($namaKegiatan) < 3 || strlen($namaKegiatan) > 100) {
+            $errors[] = "Nama kegiatan harus 3 sampai 100 karakter.";
+        }
+
+        if (!in_array($kategori, $kategoriDiizinkan, true)) {
+            $errors[] = "Kategori kegiatan tidak valid.";
+        }
+
+        $tanggalObj = DateTime::createFromFormat("!Y-m-d", $tanggalPelaksanaan);
+
+        if (!$tanggalObj || $tanggalObj->format("Y-m-d") !== $tanggalPelaksanaan) {
+            $errors[] = "Tanggal pelaksanaan tidak valid.";
+        }
+
+        if (strlen($lokasi) < 3 || strlen($lokasi) > 100) {
+            $errors[] = "Lokasi harus 3 sampai 100 karakter.";
+        }
+
+        if (strlen($deskripsi) < 10 || strlen($deskripsi) > 500) {
+            $errors[] = "Deskripsi harus 10 sampai 500 karakter.";
+        }
+
+        // Menyimpan data jika semua validasi berhasil.
+        if (empty($errors)) {
+            $_SESSION["rencana_kegiatan"] = [
+                "nama_kegiatan" => $namaKegiatan,
+                "kategori_kegiatan" => $kategori,
+                "tanggal_pelaksanaan" => $tanggalPelaksanaan,
+                "lokasi_kegiatan" => $lokasi,
+                "deskripsi_kegiatan" => $deskripsi
+            ];
+
+            unset($_SESSION["rencana_errors"]);
+        } else {
+            $_SESSION["rencana_errors"] = $errors;
+        }
+
+        // Post-Redirect-Get (PRG).
+        header("Location: index.php#rencana-kegiatan");
+        exit;
+    }
+
+    // Memproses formulir Kontak yang sudah ada.
+    $nama = trim((string) ($_POST["nama"] ?? ""));
+    $email = trim((string) ($_POST["email"] ?? ""));
+    $semesterForm = trim((string) ($_POST["semester"] ?? ""));
+    $tanggal = trim((string) ($_POST["tanggal"] ?? ""));
+    $jenisPesan = trim((string) ($_POST["jenis_pesan"] ?? ""));
+    $minat = $_POST["minat"] ?? [];
+    $prodi = trim((string) ($_POST["prodi"] ?? ""));
+    $pesan = trim((string) ($_POST["pesan"] ?? ""));
+
+    // Checkbox dapat mengirimkan lebih dari satu nilai.
+    if (!is_array($minat)) {
+        $minat = [];
+    }
+
+    // Menyimpan setiap nilai formulir ke dalam session.
+    $_SESSION["nama"] = $nama;
+    $_SESSION["email"] = $email;
+    $_SESSION["semester"] = $semesterForm;
+    $_SESSION["tanggal"] = $tanggal;
+    $_SESSION["jenis_pesan"] = $jenisPesan;
+    $_SESSION["minat"] = $minat;
+    $_SESSION["prodi"] = $prodi;
+    $_SESSION["pesan"] = $pesan;
+
+    // PRG untuk formulir Kontak.
+    header("Location: index.php#contact");
+    exit;
+
 }
 
 // Mengamankan data sebelum ditampilkan kembali ke halaman HTML.
@@ -106,6 +176,7 @@ switch ($programStudi) {
 			<ul id="navMenu">
 				<li><a href="#home">Beranda</a></li>
 				<li><a href="#about">Tentang</a></li>
+				 <li><a href="#rencana-kegiatan">Rencana Kegiatan</a></li>
 				<li><a href="#contact">Kontak</a></li>
 			</ul>
 		</nav>
