@@ -175,8 +175,8 @@ rencanaForms.forEach((rencanaForm) => {
       tampilkanKesalahan("Lokasi kegiatan harus diisi 3 sampai 100 karakter.");
       return;
     }
-    if (deskripsiKegiatan.length === 0 || deskripsiKegiatan.length > 300) {
-      tampilkanKesalahan("Deskripsi kegiatan harus diisi dan maksimal 300 karakter.");
+    if (deskripsiKegiatan.length < 10 || deskripsiKegiatan.length > 500) {
+  tampilkanKesalahan("Deskripsi kegiatan harus 10 sampai 500 karakter.");
       return;
     }
 
