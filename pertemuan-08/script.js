@@ -163,7 +163,7 @@ rencanaForms.forEach((rencanaForm) => {
       tampilkanKesalahan("Nama kegiatan harus diisi 3 sampai 100 karakter.");
       return;
     }
-    if (!["akademik", "organisasi", "sosial"].includes(kategoriKegiatan)) {
+    if (!["Akademik", "Organisasi", "Lomba", "Seminar", "Pengabdian"].includes(kategoriKegiatan)) {
       tampilkanKesalahan("Pilih kategori kegiatan.");
       return;
     }

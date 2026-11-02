@@ -102,6 +102,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 }
 
+// Mengambil data rencana dari session untuk ditampilkan.
+// Pesan kesalahan hanya tampil sekali (flash), lalu dihapus.
+$errorsRencana = $_SESSION["rencana_errors"] ?? [];
+unset($_SESSION["rencana_errors"]);
+$rencana = $_SESSION["rencana_kegiatan"] ?? null;
+
 // Mengamankan data sebelum ditampilkan kembali ke halaman HTML.
 // P6: PHP dasar dan pemrograman sisi peladen
 // Bagian 1: Variabel dan konstanta
@@ -327,17 +333,16 @@ switch ($programStudi) {
     </ul>
 <?php endif; ?>
 
-<?php if (isset($_SESSION["nama_kegiatan"])): ?>
+<?php if ($rencana !== null): ?>
     <article id="hasilRencana" class="submission-result" aria-live="polite">
         <h3>Data Rencana Kegiatan yang Dikirim</h3>
-        <p><strong>Nama Kegiatan:</strong> <?= htmlspecialchars($_SESSION["nama_kegiatan"], ENT_QUOTES, "UTF-8") ?></p>
-        <p><strong>Kategori Kegiatan:</strong> <?= htmlspecialchars(ucfirst($_SESSION["kategori_kegiatan"] ?? ""), ENT_QUOTES, "UTF-8") ?></p>
-        <p><strong>Tanggal Pelaksanaan:</strong> <?= htmlspecialchars($_SESSION["tanggal_pelaksanaan"] ?? "", ENT_QUOTES, "UTF-8") ?></p>
-        <p><strong>Lokasi Kegiatan:</strong> <?= htmlspecialchars($_SESSION["lokasi_kegiatan"] ?? "", ENT_QUOTES, "UTF-8") ?></p>
-        <p><strong>Deskripsi Kegiatan:</strong> <?= nl2br(htmlspecialchars($_SESSION["deskripsi_kegiatan"] ?? "", ENT_QUOTES, "UTF-8")) ?></p>
+        <p><strong>Nama Kegiatan:</strong> <?= htmlspecialchars($rencana["nama_kegiatan"], ENT_QUOTES, "UTF-8") ?></p>
+        <p><strong>Kategori Kegiatan:</strong> <?= htmlspecialchars($rencana["kategori_kegiatan"], ENT_QUOTES, "UTF-8") ?></p>
+        <p><strong>Tanggal Pelaksanaan:</strong> <?= htmlspecialchars($rencana["tanggal_pelaksanaan"], ENT_QUOTES, "UTF-8") ?></p>
+        <p><strong>Lokasi Kegiatan:</strong> <?= htmlspecialchars($rencana["lokasi_kegiatan"], ENT_QUOTES, "UTF-8") ?></p>
+        <p><strong>Deskripsi Kegiatan:</strong> <?= nl2br(htmlspecialchars($rencana["deskripsi_kegiatan"], ENT_QUOTES, "UTF-8")) ?></p>
     </article>
 <?php endif; ?>
-				
 			<article>
 				<h3>Rencana Proyek</h3>
 				<ul>
