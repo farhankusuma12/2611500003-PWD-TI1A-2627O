@@ -5,3 +5,4 @@ pada p8, saya melakukan:
 3. Menambahkan satu section berjudul rencana kegiatan mahasiswa
 4. menambahkan input Nama Kegiatan setelah section dan kerangkanya tadi
 5. menambahkan input rencana kegiatan
+6. menambahkan input tanggal pelaksaannya

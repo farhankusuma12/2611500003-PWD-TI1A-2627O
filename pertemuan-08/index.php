@@ -278,6 +278,17 @@ switch ($programStudi) {
             </select>
         </div>
 
+				<div class="form-group">
+            <label for="tanggal_pelaksanaan">Tanggal Pelaksanaan</label><br />
+            <input
+                class="input-form"
+                type="date"
+                id="tanggal_pelaksanaan"
+                name="tanggal_pelaksanaan"
+                required />
+        </div>
+
+
 
 
 
