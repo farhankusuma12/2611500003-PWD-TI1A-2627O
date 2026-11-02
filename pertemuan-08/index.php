@@ -244,6 +244,12 @@ switch ($programStudi) {
 				</ol>
 			</article>
 		</section>
+		
+		<section id="rencana-kegiatan">
+    <h2>Rencana Kegiatan Mahasiswa</h2>
+
+
+
 
 		<section id="contact">
 			<h2>Kontak</h2>
