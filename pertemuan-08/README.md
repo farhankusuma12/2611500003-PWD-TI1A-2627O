@@ -4,3 +4,4 @@ pada p8, saya melakukan:
 2. Menambahkan proses PHP rencana kegiatan
 3. Menambahkan satu section berjudul rencana kegiatan mahasiswa
 4. menambahkan input Nama Kegiatan setelah section dan kerangkanya tadi
+5. menambahkan input rencana kegiatan

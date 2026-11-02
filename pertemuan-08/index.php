@@ -266,6 +266,18 @@ switch ($programStudi) {
                 required />
         </div>
 
+				  <div class="form-group">
+            <label for="kategori_kegiatan">Kategori Kegiatan</label><br />
+            <select class="input-form" id="kategori_kegiatan" name="kategori_kegiatan" required>
+                <option value="">-- Pilih Kategori --</option>
+                <option value="Akademik">Akademik</option>
+                <option value="Organisasi">Organisasi</option>
+                <option value="Lomba">Lomba</option>
+                <option value="Seminar">Seminar</option>
+                <option value="Pengabdian">Pengabdian</option>
+            </select>
+        </div>
+
 
 
 
