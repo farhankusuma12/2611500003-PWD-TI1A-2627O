@@ -30,3 +30,8 @@ pada pertemuan 10 saya melakukan:
 11. memeriksa data awal di tab Browse. kedua data tampil dengan id 1 dan 2 yang terbentuk otomatis, dan kolom minat tampil sebagai teks.
 12. menentukan pengaturan ekspor basis data db_pwd_2611500003: Export method Quick dan Format SQL.
 13. mengekspor basis data ke berkas db_pwd_2611500008.sql dan memindahkannya ke direktori pertemuan-10.
+14. memeriksa kelengkapan berkas ekspor SQL di VS Code:
+    ada perintah CREATE TABLE tbl_kontak_2611500003 dengan 9 atribut sesuai struktur tabel.
+    ada perintah INSERT INTO dengan 2 data (farhan dan Andi) yang sama dengan data di tab Browse.
+    index yang diekspor hanya ADD PRIMARY KEY (id), tanpa UNIQUE.
+    kolom id memakai AUTO_INCREMENT.
