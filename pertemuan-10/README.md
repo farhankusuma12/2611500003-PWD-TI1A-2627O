@@ -5,5 +5,19 @@ pada pertemuan 10 saya melakukan:
 3. memeriksa kesiapan phpMyAdmin dan repositori pertemuan - 10
 4. menentukan nama basis data dan tabel P10 dengan nama basis data db_pwd_2611500003 dan nama tabel tbl_kontak_2611500003
 5. merancang atribut dan tipe data tabel kontak yaitu berjumlah 8 atribut dan tipe data
-6. menambahkan 1 atribut bernama id sebagai kunci utama dengan tipe data INT ditetapkan sebagai PRIMERY KEY dan menggunakan AUTO_INCRMENT
+6. menambahkan 1 atribut bernama id sebagai kunci utama dengan tipe data INT ditetapkan sebagai PRIMERY KEY dan menggunakan AUTO_INCREMENT
 7. memeriksa rancangan akhir struktur tabel kontak
+8. mempelajari perintah DDL. CREATE DATABASE membuat basis data, USE memilih basis data yang aktif, dan CREATE TABLE membuat tabel beserta atributnya. bentuk SQL dari tabel yang saya buat:
+   CREATE DATABASE db_pwd_2611500003;
+   USE db_pwd_2611500003;
+   CREATE TABLE tbl_kontak_2611500003 (
+   id INT PRIMARY KEY AUTO_INCREMENT,
+   nama VARCHAR(50),
+   email VARCHAR(255),
+   semester TINYINT,
+   tanggal DATE,
+   jenis_pesan VARCHAR(20),
+   minat VARCHAR(50),
+   prodi VARCHAR(2),
+   pesan VARCHAR(300)
+   );
