@@ -27,3 +27,4 @@ pada pertemuan 10 saya melakukan:
     (nama, email, semester, tanggal, jenis_pesan, minat, prodi, pesan)
     VALUES
     ('Andi', 'andi@example.com', 2, '2026-11-15', 'pertanyaan', 'HTML, CSS', 'TI', 'Saya ingin belajar pemrograman web.');
+11. memeriksa data awal di tab Browse. kedua data tampil dengan id 1 dan 2 yang terbentuk otomatis, dan kolom minat tampil sebagai teks.
