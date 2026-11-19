@@ -28,3 +28,4 @@ pada pertemuan 10 saya melakukan:
     VALUES
     ('Andi', 'andi@example.com', 2, '2026-11-15', 'pertanyaan', 'HTML, CSS', 'TI', 'Saya ingin belajar pemrograman web.');
 11. memeriksa data awal di tab Browse. kedua data tampil dengan id 1 dan 2 yang terbentuk otomatis, dan kolom minat tampil sebagai teks.
+12. menentukan pengaturan ekspor basis data db_pwd_2611500003: Export method Quick dan Format SQL.
