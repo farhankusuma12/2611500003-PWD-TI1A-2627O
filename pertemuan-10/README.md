@@ -21,3 +21,4 @@ pada pertemuan 10 saya melakukan:
    prodi VARCHAR(2),
    pesan VARCHAR(300)
    );
+9. 9. memasukkan data awal ke tabel kontak. data pertama: farhan, farhan@gmail.com, semester 1, tanggal 2026-11-19, prodi TI, pesan "haloo,ini percobaan". kolom id dibiarkan kosong dan terisi otomatis menjadi 1.
