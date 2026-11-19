@@ -21,4 +21,9 @@ pada pertemuan 10 saya melakukan:
    prodi VARCHAR(2),
    pesan VARCHAR(300)
    );
-9. 9. memasukkan data awal ke tabel kontak. data pertama: farhan, farhan@gmail.com, semester 1, tanggal 2026-11-19, prodi TI, pesan "haloo,ini percobaan". kolom id dibiarkan kosong dan terisi otomatis menjadi 1.
+9. memasukkan data awal ke tabel kontak. data pertama: farhan, farhan@gmail.com, semester 1, tanggal 2026-11-19, prodi TI, pesan "haloo,ini percobaan". kolom id dibiarkan kosong dan terisi otomatis menjadi 1.
+10. mempelajari perintah SQL INSERT (DML).
+    INSERT INTO tbl_kontak_2611500003
+    (nama, email, semester, tanggal, jenis_pesan, minat, prodi, pesan)
+    VALUES
+    ('Andi', 'andi@example.com', 2, '2026-11-15', 'pertanyaan', 'HTML, CSS', 'TI', 'Saya ingin belajar pemrograman web.');
