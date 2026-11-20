@@ -35,3 +35,4 @@ pada pertemuan 10 saya melakukan:
     ada perintah INSERT INTO dengan 2 data (farhan dan Andi) yang sama dengan data di tab Browse.
     index yang diekspor hanya ADD PRIMARY KEY (id), tanpa UNIQUE.
     kolom id memakai AUTO_INCREMENT.
+15. menyesuaikan index.php dan fungsi.php pertemuan-10 dengan kode akhir di modul.
