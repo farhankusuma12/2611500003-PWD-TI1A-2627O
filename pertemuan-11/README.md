@@ -14,3 +14,6 @@ PADA PERTEMUAN-11 SAYA MELAKUKAN
 12. menguji integrasi koneksi PHP- MySQL pada index P11
 13. menentukan kueri SELECT data kontak
 14. menjalankan kueri SELECT menggunakan MySQLi
+15. menambahkan pemeriksaan kegagalan kueri SELECT dengan Ubah sementara nama tabel pada variabel $sql menjadi tbl_tabel_tidak_tersedia , kemudian
+    akses aplikasi melalui http://localhost/pwd/2611500003 - PWD- TI1A - 2627O/pertemuan - 11 . Pastikan pesan
+    Kueri SELECT gagal dijalankan.
