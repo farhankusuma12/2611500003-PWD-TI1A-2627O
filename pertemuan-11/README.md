@@ -1,0 +1,4 @@
+PADA PERTEMUAN-11 SAYA MELAKUKAN
+
+1. menyalin artefak pertemuan-10 untuk baseline pertemuan-11
+2. menyiapkan direktori dan lingkungan pengembangan pertemuan - 11
