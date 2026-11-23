@@ -17,3 +17,4 @@ PADA PERTEMUAN-11 SAYA MELAKUKAN
 15. menambahkan pemeriksaan kegagalan kueri SELECT dengan Ubah sementara nama tabel pada variabel $sql menjadi tbl_tabel_tidak_tersedia , kemudian
     akses aplikasi melalui http://localhost/pwd/2611500003 - PWD- TI1A - 2627O/pertemuan - 11 . Pastikan pesan
     Kueri SELECT gagal dijalankan.
+16. mengambil hasil SELECT menggunakan mysqli_fetch_assoc
