@@ -3,7 +3,7 @@
 $host = "localhost";
 $user = "root";
 $password = "";
-$database = "db_pwd_2611500003";
+$database = "db_tidak_tersedia";
 
 // Membuat koneksi PHP dengan MySQL menggunakan MySQLi.
 mysqli_report(MYSQLI_REPORT_OFF);
