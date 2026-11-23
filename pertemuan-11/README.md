@@ -10,3 +10,4 @@ PADA PERTEMUAN-11 SAYA MELAKUKAN
 8. menguji koneksi dari PHP ke MySQL dengan file sementara Bernama uji_koneksi.php
 9. menguji penanganan kegagalan koneksi PHP- MySQL
 10. menyiapkan pemuatan berkas koneksi pada p11 dan mengintegrasikan berkas koneksi pada index p11
+11. memeriksa alur ketersediaan koneksi pada index P11
