@@ -18,3 +18,4 @@ PADA PERTEMUAN-11 SAYA MELAKUKAN
     akses aplikasi melalui http://localhost/pwd/2611500003 - PWD- TI1A - 2627O/pertemuan - 11 . Pastikan pesan
     Kueri SELECT gagal dijalankan.
 16. mengambil hasil SELECT menggunakan mysqli_fetch_assoc
+17. memeriksa hasil pengambilan data kontak

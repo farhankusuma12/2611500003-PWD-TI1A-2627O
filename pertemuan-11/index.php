@@ -3,7 +3,7 @@ require_once("fungsi.php");
 require_once("koneksi.php"); # P11
 
 // P11: Mengambil data kontak dari basis data menggunakan operasi READ.
-$sql = "SELECT * FROM tbl_tabel_tidak_tersedia";
+$sql = "SELECT * FROM tbl_kontak_2611500003";
 $hasil = mysqli_query($koneksi, $sql);
 
 // P11: Memeriksa keberhasilan kueri SELECT.
@@ -16,6 +16,11 @@ $dataKontak = [];
 while ($baris = mysqli_fetch_assoc($hasil)) {
 $dataKontak[] = $baris;
 }
+
+// P11: Pengujian sementara hasil pengambilan data.
+/*echo "<pre>";
+var_dump($dataKontak);
+echo "</pre>";*/
 
 // P9: Memproses data formulir dan menyimpannya ke dalam session.
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
